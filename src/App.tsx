@@ -4,7 +4,7 @@ import "./App.css";
 function App() {
   return (
     <div className="mapDiv">
-      <ArcgisMap></ArcgisMap>
+      <ArcgisMap center={[55, 25]} zoom={13}></ArcgisMap>
     </div>
   );
 }
