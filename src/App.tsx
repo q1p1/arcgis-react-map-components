@@ -1,7 +1,7 @@
 import { ArcgisMap } from "@arcgis/map-components-react";
 import GraphicsLayer from "@arcgis/core/layers/GraphicsLayer";
 import Graphic from "@arcgis/core/Graphic";
-import Polyline from "@arcgis/core/geometry/Polyline";
+import Polygon from "@arcgis/core/geometry/Polygon.js";
 
 import "./App.css";
 
@@ -16,17 +16,20 @@ function App() {
           const graphicsLayer = new GraphicsLayer();
           map.add(graphicsLayer);
 
-          const polyline = new Polyline({
-            paths: [
+          const polygon = new Polygon({
+            rings: [
               [
-                [54.98131842104888, 25.018558205934426],
-                [54.9914613580155, 25.002272706109935],
+                [54.99419933369407, 25.000951751182384],
+                [54.989537624618634, 24.99908490366272],
+                [54.99994539453914, 24.98100403595454],
+                [55.005582578844354, 24.983363071888363],
+                [54.99419933369407, 25.000951751182384],
               ],
             ],
           });
 
           const graphic = new Graphic({
-            geometry: polyline,
+            geometry: polygon,
           });
 
           graphicsLayer.add(graphic);
