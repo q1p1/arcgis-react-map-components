@@ -1,7 +1,12 @@
+import { ArcgisMap } from "@arcgis/map-components-react";
 import "./App.css";
 
 function App() {
-  return <>create your map here</>;
+  return (
+    <div className="mapDiv">
+      <ArcgisMap></ArcgisMap>
+    </div>
+  );
 }
 
 export default App;
