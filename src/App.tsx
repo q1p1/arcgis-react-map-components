@@ -1,4 +1,5 @@
 import { ArcgisMap } from "@arcgis/map-components-react";
+import GeoJSONLayer from "@arcgis/core/layers/GeoJSONLayer";
 import "./App.css";
 
 // If GeoJSON files are not on the same domain as your website, a CORS enabled server
@@ -9,7 +10,16 @@ const url =
 function App() {
   return (
     <div className="mapDiv">
-      <ArcgisMap basemap={"gray-vector"}></ArcgisMap>
+      <ArcgisMap
+        basemap={"gray-vector"}
+        onArcgisViewReadyChange={(event) => {
+          const map: __esri.Map = event.target.map;
+          const layer = new GeoJSONLayer({
+            url,
+          });
+          map.add(layer);
+        }}
+      ></ArcgisMap>
     </div>
   );
 }
