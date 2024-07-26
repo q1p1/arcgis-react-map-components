@@ -1,15 +1,22 @@
+import GeoJSONLayer from "@arcgis/core/layers/GeoJSONLayer";
 import { ArcgisMap } from "@arcgis/map-components-react";
 import "./App.css";
-
-// If GeoJSON files are not on the same domain as your website, a CORS enabled server
-// or a proxy is required.
-const url =
-  "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.geojson";
 
 function App() {
   return (
     <div className="mapDiv">
-      <ArcgisMap basemap={"gray-vector"}></ArcgisMap>
+      <ArcgisMap
+        basemap={"gray-vector"}
+        onArcgisViewReadyChange={(event) => {
+          const map = event.target.map as __esri.Map;
+
+          const geoJSONLayer = new GeoJSONLayer({
+            url: "http://localhost:3001/earthquakes",
+          });
+
+          map.add(geoJSONLayer);
+        }}
+      ></ArcgisMap>
     </div>
   );
 }
