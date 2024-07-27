@@ -1,6 +1,13 @@
 import GeoJSONLayer from "@arcgis/core/layers/GeoJSONLayer";
 import { ArcgisMap } from "@arcgis/map-components-react";
+import PopupTemplate from "@arcgis/core/PopupTemplate";
+
 import "./App.css";
+
+const template = new PopupTemplate({
+  title: "{type} - {mag}",
+  content: "type: {type} - Magnitude: {mag}",
+});
 
 function App() {
   return (
@@ -12,6 +19,7 @@ function App() {
 
           const geoJSONLayer = new GeoJSONLayer({
             url: "http://localhost:3001/earthquakes",
+            popupTemplate: template,
           });
 
           map.add(geoJSONLayer);
