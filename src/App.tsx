@@ -1,12 +1,28 @@
 import GeoJSONLayer from "@arcgis/core/layers/GeoJSONLayer";
 import { ArcgisMap } from "@arcgis/map-components-react";
 import PopupTemplate from "@arcgis/core/PopupTemplate";
+import FieldsContent from "@arcgis/core/popup/content/FieldsContent";
+import FieldInfo from "@arcgis/core/popup/FieldInfo";
 
 import "./App.css";
 
+const typeFieldInfo = new FieldInfo({
+  fieldName: "type",
+  label: "Type",
+});
+
+const magnitudeFieldInfo = new FieldInfo({
+  fieldName: "mag",
+  label: "Magnitude",
+});
+
+const fieldsContent = new FieldsContent({
+  fieldInfos: [typeFieldInfo, magnitudeFieldInfo],
+});
+
 const template = new PopupTemplate({
   title: "{type} - {mag}",
-  content: "type: {type} - Magnitude: {mag}",
+  content: [fieldsContent],
 });
 
 function App() {
