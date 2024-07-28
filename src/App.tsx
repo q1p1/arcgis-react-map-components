@@ -22,6 +22,8 @@ function App() {
     <div className="mapDiv">
       <ArcgisMap
         basemap={"gray-vector"}
+        center={[54.9976298, 25.004775094782516]}
+        zoom={12}
         onArcgisViewReadyChange={(event) => {
           const map = event.target.map as __esri.Map;
 
