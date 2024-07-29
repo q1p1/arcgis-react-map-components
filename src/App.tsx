@@ -38,6 +38,18 @@ const simpleRenderer = new SimpleRenderer({
   visualVariables: [sizeVariable, colorVariable],
 });
 
+const topEarthquakesGeoJSONLayer = new GeoJSONLayer({
+  url: "http://localhost:3001/topEarthquakes",
+  popupTemplate: template,
+  renderer: simpleRenderer,
+});
+
+const bottomEarthquakesGeoJSONLayer = new GeoJSONLayer({
+  url: "http://localhost:3001/bottomEarthquakes",
+  popupTemplate: template,
+  renderer: simpleRenderer,
+});
+
 function App() {
   return (
     <div className="mapDiv">
@@ -48,13 +60,10 @@ function App() {
         onArcgisViewReadyChange={(event) => {
           const map = event.target.map as __esri.Map;
 
-          const geoJSONLayer = new GeoJSONLayer({
-            url: "http://localhost:3001/earthquakes",
-            popupTemplate: template,
-            renderer: simpleRenderer,
-          });
-
-          map.add(geoJSONLayer);
+          map.addMany([
+            topEarthquakesGeoJSONLayer,
+            bottomEarthquakesGeoJSONLayer,
+          ]);
         }}
       ></ArcgisMap>
     </div>
