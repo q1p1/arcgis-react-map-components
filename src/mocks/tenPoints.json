@@ -9,7 +9,7 @@
           "type": "earthquake"
         },
         "geometry": {
-          "coordinates": [54.955729798940354, 25.004775094782516],
+          "coordinates": [54.955729798940354, 25.036027665740207],
           "type": "Point"
         }
       },
@@ -20,7 +20,7 @@
           "type": "earthquake"
         },
         "geometry": {
-          "coordinates": [54.965729798940354, 25.004775094782516],
+          "coordinates": [54.965729798940354, 25.036027665740207],
           "type": "Point"
         }
       },
@@ -31,7 +31,7 @@
           "type": "earthquake"
         },
         "geometry": {
-          "coordinates": [54.975729798940354, 25.004775094782516],
+          "coordinates": [54.975729798940354, 25.036027665740207],
           "type": "Point"
         }
       },
@@ -42,7 +42,7 @@
           "type": "earthquake"
         },
         "geometry": {
-          "coordinates": [54.985729798940354, 25.004775094782516],
+          "coordinates": [54.985729798940354, 25.036027665740207],
           "type": "Point"
         }
       },
@@ -53,7 +53,7 @@
           "type": "earthquake"
         },
         "geometry": {
-          "coordinates": [54.995729798940354, 25.004775094782516],
+          "coordinates": [54.995729798940354, 25.036027665740207],
           "type": "Point"
         }
       },
@@ -64,7 +64,7 @@
           "type": "earthquake"
         },
         "geometry": {
-          "coordinates": [55.005729798940354, 25.004775094782516],
+          "coordinates": [55.005729798940354, 25.036027665740207],
           "type": "Point"
         }
       },
@@ -75,7 +75,7 @@
           "type": "earthquake"
         },
         "geometry": {
-          "coordinates": [55.015729798940354, 25.004775094782516],
+          "coordinates": [55.015729798940354, 25.036027665740207],
           "type": "Point"
         }
       },
@@ -86,7 +86,7 @@
           "type": "earthquake"
         },
         "geometry": {
-          "coordinates": [55.025729798940354, 25.004775094782516],
+          "coordinates": [55.025729798940354, 25.036027665740207],
           "type": "Point"
         }
       },
@@ -97,7 +97,7 @@
           "type": "earthquake"
         },
         "geometry": {
-          "coordinates": [55.035729798940354, 25.004775094782516],
+          "coordinates": [55.035729798940354, 25.036027665740207],
           "type": "Point"
         }
       },
@@ -108,7 +108,7 @@
           "type": "earthquake"
         },
         "geometry": {
-          "coordinates": [55.045729798940354, 25.004775094782516],
+          "coordinates": [55.045729798940354, 25.036027665740207],
           "type": "Point"
         }
       }
@@ -124,7 +124,7 @@
           "type": "earthquake"
         },
         "geometry": {
-          "coordinates": [54.955729798940354, 24.993750073657566],
+          "coordinates": [54.955729798940354, 24.982545144821557],
           "type": "Point"
         }
       },
@@ -135,7 +135,7 @@
           "type": "earthquake"
         },
         "geometry": {
-          "coordinates": [54.965729798940354, 24.993750073657566],
+          "coordinates": [54.965729798940354, 24.982545144821557],
           "type": "Point"
         }
       },
@@ -146,7 +146,7 @@
           "type": "earthquake"
         },
         "geometry": {
-          "coordinates": [54.975729798940354, 24.993750073657566],
+          "coordinates": [54.975729798940354, 24.982545144821557],
           "type": "Point"
         }
       },
@@ -157,7 +157,7 @@
           "type": "earthquake"
         },
         "geometry": {
-          "coordinates": [54.985729798940354, 24.993750073657566],
+          "coordinates": [54.985729798940354, 24.982545144821557],
           "type": "Point"
         }
       },
@@ -168,7 +168,7 @@
           "type": "earthquake"
         },
         "geometry": {
-          "coordinates": [54.995729798940354, 24.993750073657566],
+          "coordinates": [54.995729798940354, 24.982545144821557],
           "type": "Point"
         }
       },
@@ -179,7 +179,7 @@
           "type": "earthquake"
         },
         "geometry": {
-          "coordinates": [55.005729798940354, 24.993750073657566],
+          "coordinates": [55.005729798940354, 24.982545144821557],
           "type": "Point"
         }
       },
@@ -190,7 +190,7 @@
           "type": "earthquake"
         },
         "geometry": {
-          "coordinates": [55.015729798940354, 24.993750073657566],
+          "coordinates": [55.015729798940354, 24.982545144821557],
           "type": "Point"
         }
       },
@@ -201,7 +201,7 @@
           "type": "earthquake"
         },
         "geometry": {
-          "coordinates": [55.025729798940354, 24.993750073657566],
+          "coordinates": [55.025729798940354, 24.982545144821557],
           "type": "Point"
         }
       },
@@ -212,7 +212,7 @@
           "type": "earthquake"
         },
         "geometry": {
-          "coordinates": [55.035729798940354, 24.993750073657566],
+          "coordinates": [55.035729798940354, 24.982545144821557],
           "type": "Point"
         }
       },
@@ -223,7 +223,7 @@
           "type": "earthquake"
         },
         "geometry": {
-          "coordinates": [55.045729798940354, 24.993750073657566],
+          "coordinates": [55.045729798940354, 24.982545144821557],
           "type": "Point"
         }
       }
