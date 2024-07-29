@@ -5,6 +5,8 @@ import SimpleRenderer from "@arcgis/core/renderers/SimpleRenderer";
 import SimpleMarkerSymbol from "@arcgis/core/symbols/SimpleMarkerSymbol";
 import SizeVariable from "@arcgis/core/renderers/visualVariables/SizeVariable";
 import SizeStop from "@arcgis/core/renderers/visualVariables/support/SizeStop";
+import ColorVariable from "@arcgis/core/renderers/visualVariables/ColorVariable";
+import ColorStop from "@arcgis/core/renderers/visualVariables/support/ColorStop";
 
 import "./App.css";
 
@@ -23,9 +25,17 @@ const sizeVariable = new SizeVariable({
   ],
 });
 
+const colorVariable = new ColorVariable({
+  field: "mag",
+  stops: [
+    new ColorStop({ value: 1, color: "blue" }),
+    new ColorStop({ value: 10, color: "red" }),
+  ],
+});
+
 const simpleRenderer = new SimpleRenderer({
   symbol: simpleMarkerSymbol,
-  visualVariables: [sizeVariable],
+  visualVariables: [sizeVariable, colorVariable],
 });
 
 function App() {
