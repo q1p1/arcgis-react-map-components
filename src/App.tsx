@@ -3,6 +3,8 @@ import { ArcgisMap } from "@arcgis/map-components-react";
 import PopupTemplate from "@arcgis/core/PopupTemplate";
 import SimpleRenderer from "@arcgis/core/renderers/SimpleRenderer";
 import SimpleMarkerSymbol from "@arcgis/core/symbols/SimpleMarkerSymbol";
+import SizeVariable from "@arcgis/core/renderers/visualVariables/SizeVariable";
+import SizeStop from "@arcgis/core/renderers/visualVariables/support/SizeStop";
 
 import "./App.css";
 
@@ -13,8 +15,17 @@ const template = new PopupTemplate({
 
 const simpleMarkerSymbol = new SimpleMarkerSymbol({ color: "green" });
 
+const sizeVariable = new SizeVariable({
+  field: "mag",
+  stops: [
+    new SizeStop({ value: 1, size: "4px" }),
+    new SizeStop({ value: 10, size: "40px" }),
+  ],
+});
+
 const simpleRenderer = new SimpleRenderer({
   symbol: simpleMarkerSymbol,
+  visualVariables: [sizeVariable],
 });
 
 function App() {
